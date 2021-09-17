@@ -117,7 +117,7 @@ export default function DevStore(){
                 <Conteudo>
                     <Cabecalho />
                     <ToastContainer />
-                    <LoadingBar color="red" ref={loading} />
+                    <LoadingBar color="#119FDC" ref={loading} />
                     <div className="tabelas_input"> 
                     <div className="box-cadastrar"> 
                                 <div className="titulo"> 
@@ -177,10 +177,8 @@ export default function DevStore(){
                                         <th className="titulos"> ID </th>
                                         <th className="titulos"> Nome </th>
                                         <th className="titulos"> Categoria </th>
-                                        <th className="titulos"> PrecoDe </th>
                                         <th className="titulos"> PrecoPor </th>
                                         <th className="titulos"> Avaliacao </th>
-                                        <th className="titulos"> Descricao </th>
                                         <th className="titulos"> Quantidade </th>
                                         <th className="campo-acao"> </th>
                                         <th className="campo-acao"> </th>
@@ -200,14 +198,9 @@ export default function DevStore(){
                                                     : item.nm_produto}
                                             </td>
                                             <td> {item.ds_categoria} </td>
-                                            <td> {item.vl_preco_de} </td>
                                             <td> {item.vl_preco_por} </td>
                                             <td> {item.vl_avaliacao} </td>
-                                            <td title={item.nm_produto}>  {item.ds_produto != null && item.ds_produto.length >= 15
-                                                    ? item.ds_produto.substr(0, 15) + '...'
-                                                    : item.ds_produto} </td>
                                             <td> {item.qtd_estoque} </td>
-                                            <td> {item.dt_conclusao} </td>
                                             <td className="campo-acao"> <button onClick={() => alterar(item)} > <img src="assets/images/edit.svg" alt="" /> </button> </td>
                                             <td className="campo-acao"> <button onClick={() => remover(item.id_produto)}> <img src="assets/images/excluir.svg" alt="" /> </button> </td> 
                                         </tr>

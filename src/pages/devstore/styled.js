@@ -98,8 +98,7 @@ background: #F5F5F5;
 .container-form div:nth-child(4),
 .container-form div:nth-child(6)
  {
-    margin-right: 23em;
-    padding-left: 70px;
+    padding-left: 78px;
 }
 
 .container-form div:nth-child(2){
@@ -107,7 +106,7 @@ background: #F5F5F5;
 }
 
 .container-form div:nth-child(6){
-    padding-left: 62px;
+    padding-left: 68px;
 }
 
 
@@ -115,7 +114,7 @@ background: #F5F5F5;
 .container-form div:nth-child(3),
 .container-form div:nth-child(5)
  {
-    padding-left: 46px;
+    padding-left: 40px;
 }
 
 .label{
