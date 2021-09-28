@@ -35,7 +35,7 @@ export default function DevStore(){
     }
 
     async function inserir(){
-        if(idAlterando == 0) {
+        if(idAlterando === 0) {
             let r = await api.inserir(nome, categoria, precoDe, precoPor, avaliacao, descricao, quantidade, imagem);
             loading.current.complete();
 
@@ -122,7 +122,7 @@ export default function DevStore(){
                     <div className="box-cadastrar"> 
                                 <div className="titulo"> 
                                     <div className="barra2"> </div>
-                                    <div> <b>{idAlterando == 0 ? "Novo Produto" : "Alterando Produto" + idAlterando }</b> </div>
+                                    <div> <b>{idAlterando === 0 ? "Novo Produto" : "Alterando Produto" + idAlterando }</b> </div>
                                 </div>
 
                                 <div className="container-form">  
@@ -160,7 +160,7 @@ export default function DevStore(){
                                         <textarea type="text" value={descricao} onChange={e => setDescricao(e.target.value)}></textarea>
                                     </div>
                                    
-                                    <button className="btn-cadastrar" onClick={inserir}>{idAlterando == 0 ? "Cadastrar" : "Alterar"} </button>
+                                    <button className="btn-cadastrar" onClick={inserir}>{idAlterando === 0 ? "Cadastrar" : "Alterar"} </button>
                                 </div>
                         </div>
 
@@ -190,7 +190,7 @@ export default function DevStore(){
                                 <tbody>
                                     {produtos.map((item, i) =>
                              
-                                        <tr className={i % 2 == 0 ? "linha-alternada" : ""}>
+                                        <tr className={i % 2 === 0 ? "linha-alternada" : ""}>
                                             <td className="imagem-table"> <img src={item.img_produto} alt=""/> </td>
                                             <td> {item.id_produto} </td>
                                             <td title={item.nm_produto}> {item.nm_produto != null && item.nm_produto.length >= 25
