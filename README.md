@@ -1,7 +1,6 @@
 # DevStore – Sistema de Cadastro de Produtos
 
 Projeto avaliativo do curso técnico, desenvolvido para simular um sistema de gerenciamento de produtos. A aplicação possui autenticação básica, cadastro de itens e funcionalidades de CRUD (Create, Read, Update, Delete). O objetivo foi aplicar os conhecimentos em React.js, HTML, CSS, API e banco de dados relacional.
----
 
 ## 🛠️ Tecnologias Utilizadas
 
